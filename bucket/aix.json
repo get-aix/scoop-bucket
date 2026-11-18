@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0",
+    "description": "Launch AI coding tools with the right AI gateway profile and credentials",
+    "homepage": "https://github.com/get-aix/aix",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/get-aix/aix/releases/download/v1.0.0/aix-x86_64-pc-windows-msvc.exe#/aix.exe",
+            "hash": "7c22e0a7dcf1c9345cea8d4a1f60bdc988fd3d0c545a2c922c1cc0eda8669044"
+        }
+    },
+    "bin": "aix.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/get-aix/aix/releases/download/v$version/aix-x86_64-pc-windows-msvc.exe#/aix.exe"
+            }
+        }
+    }
+}
